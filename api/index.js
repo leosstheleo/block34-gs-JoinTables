@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
 
-router.use('/places', require('./places'));
-router.use('/users', require('./users'));
-router.use('/vacations', require('./vacations'));
+router.use('/Restaurants', require('./Restaurants'));
+router.use('/Customers', require('./Customers'));
+router.use('/Reservations', require('./Reservations'));
 
 
 module.exports = router;

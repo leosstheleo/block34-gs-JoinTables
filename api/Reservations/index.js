@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { fetchVacations } = require('../../db')
+const { fetchReservations } = require('../../db')
 
 router.get('/', async (req, res, next) => {
 try {
-    const vacations= await fetchVacations();
-    res.status(200).send(vacations)}
+    const Reservations= await fetchReservations();
+    res.status(200).send(Reservations)}
     catch (error) {
     next (error)
 }

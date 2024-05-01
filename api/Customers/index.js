@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { fetchUsers } = require('../../db')
+const { fetchCustomers } = require('../../db')
 
 router.get('/', async (req, res, next) => {
 try {
-    const users = await fetchUsers();
-    res.status(200).send(users)}
+    const uCustomers = await fetchCustomers();
+    res.status(200).send(Customers)}
     catch (error) {
     next (error)
 }
